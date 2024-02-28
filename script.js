@@ -24,8 +24,17 @@ ninja1.showStats();
 ninja1.drinkShake();
 
 
-class Sensei {
-    constructor(){
-        
+class Sensei extends Ninja{ //Clase Sensei es el hijo de Ninja, con extends se hereda
+    constructor(nombre, salud, sabiduria){ 
+        super(nombre, salud);  //Super utiliza los datos del constructor para sus atributos
+        this.sabiduria = sabiduria;
+    }
+    speakWisdom(){
+        console.log("Lo que un programador puede hacer en un mes, dos programadores pueden hacerlo en dos meses.");
     }
 }
+
+const sensei1 = new Sensei("Nitsuga", 200, 10);
+sensei1.sayName();
+sensei1.showStats();
+sensei1.speakWisdom();
