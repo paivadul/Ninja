@@ -22,3 +22,10 @@ const ninja1 = new Ninja("Hyabusa", 100);
 ninja1.sayName();
 ninja1.showStats();
 ninja1.drinkShake();
+
+
+class Sensei {
+    constructor(){
+        
+    }
+}
